@@ -1,18 +1,17 @@
-$(document).ready(function($) {
-		// text field
-		$inputs = $(".xform input:text").each(function(index) {
-			$(this).addClass('form-control');
-		});
+$(function() {
+	// Get all the inputs
+	$inputs = $(".xform input").each(function(index, e) {
+		// Define this
+		$_this = $(this);
 
-		$inputs = $(".xform input:radio").each(function(index) {
-			$(this).closest('div').removeClass("form-group").addClass("radio");
-		});
+		// Textfields
+		if(e.type === 'text' || e.type === 'select') {
+			$_this.addClass('form-control');
+		}
 
-		$inputs = $(".xform input:checkbox").each(function(index) {
-			$(this).closest('div').removeClass("form-group").addClass('checkbox');
-		});
-
-		$inputs = $(".xform select").each(function(index) {
-			$(this).addClass('form-control');
-		});
+		// Check boxes
+		if(e.type === 'checkbox' || e.type === 'radio') {
+			$_this.closest('div').removeClass("form-group").addClass(e.type);
+		}
+	});
 });
