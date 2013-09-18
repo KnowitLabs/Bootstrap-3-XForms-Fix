@@ -1,0 +1,12 @@
+.radio, .checkbox {
+	padding-left: 0px;
+}
+
+div.checkbox div, div.radio div {
+	float: left;
+	margin-right: 10px;
+}
+
+div.checkbox label, div.radio label {
+	display: block;
+}

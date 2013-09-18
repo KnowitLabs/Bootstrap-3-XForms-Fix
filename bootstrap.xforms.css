@@ -1,0 +1,7 @@
+.xform .checkbox legend,
+.xform .radio legend {
+	border:none;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
