@@ -1,11 +1,11 @@
 $(function() {
 	// Get all the inputs
-	$inputs = $(".xform input").each(function(index, e) {
+	$inputs = $(".xform input, .xform select, .xform textarea").each(function(index, e) {
 		// Define this
 		$_this = $(this);
 
 		// Textfields
-		if(e.type === 'text' || e.type === 'select') {
+		if(e.type === 'text' || e.type === 'select-one' || e.type === 'textarea') {
 			$_this.addClass('form-control');
 		}
 
