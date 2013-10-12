@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<title>Better Xforms jQuery plugin</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+		<meta name="googlebot" content="index,archive,follow,noodp" />
+		<meta name="robots" content="all,index,follow" />
+		<meta name="msnbot" content="all,index,follow" />
+		
+		<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- BetterXforms -->
+		<link rel="stylesheet" href="assets/css/bootstrap.betterxforms.css">
+
+		<!-- iCheck -->
+		<link rel="stylesheet" href="assets/css/bootstrap.icheck.css">
+		<link href="assets/iCheck/skins/square/blue.css" rel="stylesheet">
+
+		<script>
+		if( /*@cc_on!@*/false && document.documentMode > 9 ) {
+			document.documentElement.className+=' ie' + document.documentMode;
+		}
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<!-- BetterXforms -->
+		<script src="assets/js/jquery.betterxforms.v1.0.js"></script>
+
+		<!-- iCheck -->
+		<script src="assets/iCheck/jquery.icheck.min.js"></script>
+
+		<!-- Demo with iCheck and a couple of iCheck features -->
+		<script>
+		$(function() {
+			$('.xform').BetterXforms({
+				bsv : 3,
+				iCheck : {
+					enabled : true,
+					labelHover : true,
+					checkboxClass : 'icheckbox_square-blue',
+					radioClass : 'iradio_square-blue',
+					cursor: true
+				}
+			});
+		});
+		</script>
+
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-startup-image" href="images/apple-touch-startup-image.png">
+	</head>
+	<body style="padding-top:40px;padding-bottom:40px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="xform">
+						<div class="form-group">
+							<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Name">Name</label>
+						  <input type="text" id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Name" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$Name" size="20" value="">
+						</div>
+						<div class="form-group">
+							<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Phone">Phone</label>
+						  <input type="text" id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Phone" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$Phone" size="20" value="">
+						</div>
+						<div class="form-group">
+							<fieldset>
+								<legend>What do we want?</legend>
+								<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_god1">
+									<input type="checkbox" value="1" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$god" id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_god1"> Grumpy cat!
+								</label>
+								<br>
+								<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_god2">
+									<input type="checkbox" value="2" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$god" id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_god2"> Bob Hope!
+								</label>
+								<br>
+							</fieldset>
+						</div>
+						<div class="form-group">
+							<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Select">Country (single)</label>
+							<select id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Select" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$Select">
+								<option value="Sweden">Sweden</option>
+								<option value="Norway">Norway</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Select">City (multiple)</label>
+							<select id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_Select" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$Select" multiple>
+								<option value="Sweden">Sweden</option>
+								<option value="Norway">Norway</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<fieldset>
+								<legend>Do you think that Google is Evil?</legend>
+								<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_PickOneyes">
+									<input type="radio" value="yes" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$PickOne" id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_PickOneyes"> Yes
+								</label>
+								<br>
+								<label for="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_PickOneno">
+									<input type="radio" value="no" name="ctl00$ctl00$ctl00$Content$Content$MainContent$ctl03$ctl00$ctl03$ctl01$ctl03$ctl01$ctl01$PickOne" id="Content_Content_MainContent_ctl03_ctl00_ctl03_ctl01_ctl03_ctl01_ctl01_PickOneno"> No
+								</label>
+								<br>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
