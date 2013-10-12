@@ -24,10 +24,6 @@
 		<!-- BetterXforms -->
 		<link rel="stylesheet" href="assets/css/bootstrap.betterxforms.css">
 
-		<!-- iCheck -->
-		<link rel="stylesheet" href="assets/css/bootstrap.icheck.css">
-		<link href="assets/iCheck/skins/square/blue.css" rel="stylesheet">
-
 		<script>
 		if( /*@cc_on!@*/false && document.documentMode > 9 ) {
 			document.documentElement.className+=' ie' + document.documentMode;
@@ -40,21 +36,11 @@
 		<!-- BetterXforms -->
 		<script src="assets/js/jquery.betterxforms.v1.0.js"></script>
 
-		<!-- iCheck -->
-		<script src="assets/iCheck/jquery.icheck.min.js"></script>
-
 		<!-- Demo with iCheck and a couple of iCheck features -->
 		<script>
 		$(function() {
 			$('.xform').BetterXforms({
-				bsv : 3,
-				iCheck : {
-					enabled : true,
-					labelHover : true,
-					checkboxClass : 'icheckbox_square-blue',
-					radioClass : 'iradio_square-blue',
-					cursor: true
-				}
+				bsv : 3
 			});
 		});
 		</script>
