@@ -1,7 +1,7 @@
 BetterXforms jQuery plugin
 ======================
 
-> This plugin improves the look and feel for EPiServer xforms and adds support for [iCheck jQuery plugin](https://github.com/fronteed/iCheck/)
+> This plugin improves the look and feel for EPiServer xforms and adds support for [iCheck jQuery plugin](https://github.com/fronteed/iCheck/).
 
 ## Features
 - Works with Bootstrap 2.3.x and Bootstrap 3
@@ -27,19 +27,25 @@ The markup should look like this.
 - Add the code below after the dom is ready.
 
 ```js
+$('.xform').BetterXforms();
+```
+
+Bootstrap 3 will be used by default. If you want to use Bootstrap 2.3.x add the bsv option.
+
+```js
 $('.xform').BetterXforms({
 	bsv : 3
 });
 ```
 
-If you want enable iCheck you need to add the following.
+If you want enable iCheck you need to do the following.
 
 - Include CSS <code>bootstrap.icheck.css</code>
 - Include CSS <code>iCheck/skins/square/blue.css</code> (Or any other skin you like)
 - Include JS <code>jquery.icheck.min.js</code>
 - Add the code below after the dom is ready.
 
-*Notice the checkboxClass and radioClass have to cohere with the iCheck skin you included*
+Notice that the *checkboxClass* and *radioClass* have to cohere with the iCheck skin you included. In this case it's the blue version of the square skin.
 
 ```js
 $('.xform').BetterXforms({
@@ -54,10 +60,9 @@ $('.xform').BetterXforms({
 });
 ```
 
-
 ### Dependencies
-- jQuery (required)
-- iCheck (optional)
+- [jQuery](https://github.com/jquery/jquery) (required)
+- [iCheck](https://github.com/fronteed/iCheck/) (optional)
 
 ## Changelog
 - v1.0 - Completely new release
