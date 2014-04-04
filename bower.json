@@ -1,0 +1,21 @@
+{
+	"name": "BetterXforms",
+	"version": "1.0.0",
+	"homepage": "https://github.com/KnowitLabs/Bootstrap-3-XForms-Fix",
+	"authors": [
+		"Andreas Norman & Tobias Korsbäck"
+	],
+	"description": "Improve EPiServer Xforms",
+	"main": "jquery.betterxforms.js",
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "1.x"
+	},
+}
