@@ -45,7 +45,7 @@
 			var inputGroupClass = 'form-group';
 
 			// Loop through all the input elements
-			$('.xform input, .xform select').each(function (index, e) {
+			$('.xform input, .xform select, .xform textarea').each(function (index, e) {
 
 				// Input element
 				var inputElement = this;
@@ -55,7 +55,7 @@
 				inputElement.el = inputElement;
 
 				// Check element type
-				if (e.type === 'text' || e.type === 'select-one' || e.type === 'select-multiple') {
+				if (e.type === 'text' || e.type === 'textarea' || e.type === 'select-one' || e.type === 'select-multiple') {
 
 					// The element is a text field or select element
 					// Add bootstrap class class
